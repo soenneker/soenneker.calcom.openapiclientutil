@@ -1,15 +1,16 @@
+using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Serilog;
-using Soenneker.Fixtures.Unit;
+using Soenneker.TestHosts.Unit;
 using Soenneker.Utils.Test;
 using Soenneker.CalCom.OpenApiClientUtil.Registrars;
 
 namespace Soenneker.CalCom.OpenApiClientUtil.Tests;
 
-public sealed class Fixture : UnitFixture
+public sealed class Host : UnitTestHost
 {
-    public override System.Threading.Tasks.ValueTask InitializeAsync()
+    public override Task InitializeAsync()
     {
         SetupIoC(Services);
 
