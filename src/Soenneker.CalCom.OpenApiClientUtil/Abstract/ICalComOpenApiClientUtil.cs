@@ -11,7 +11,7 @@ namespace Soenneker.CalCom.OpenApiClientUtil.Abstract;
 public interface ICalComOpenApiClientUtil: IDisposable, IAsyncDisposable
 {
     /// <summary>
-    /// Gets the value.
+    /// Gets the cached Cal.com client for the current utility instance.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>A task containing the result of the operation.</returns>
