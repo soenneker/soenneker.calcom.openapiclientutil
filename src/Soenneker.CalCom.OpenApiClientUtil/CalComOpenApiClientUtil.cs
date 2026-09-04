@@ -11,6 +11,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.CalCom.OpenApiClientUtil;
 
+/// <inheritdoc cref="ICalComOpenApiClientUtil" />
 public sealed class CalComOpenApiClientUtil : ICalComOpenApiClientUtil
 {
     private readonly AsyncSingleton<CalComOpenApiClient> _client;
